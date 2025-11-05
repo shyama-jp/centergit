@@ -1,3 +1,21 @@
+#!/bin/bash
+echo "a: to create file"
+echo "b: display file peermissions"
+echo "c: delete file"
+read -p "enter your choice (a-c) " ch
+case $ch in
+     
+     a) 
+       touch $1
+          ;;
+     b)
+       ls -l $1
+          ;;
+     c)
+       rm $1
+          ;;
+
+     *)
+       echo "selecet from a,b,c "
+          ;;
 esac
-asdfg
-qwert
