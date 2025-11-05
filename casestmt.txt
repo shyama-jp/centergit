@@ -1,10 +1,1 @@
-#!/bin/bash
-echo "a: to create file"
-echo "b: to display file permission"
-echo "c: to delete file"
-read -p "enter your choice (a-c) " ch
-case $ch in
-a) touch $1;;
-b) ls -l $1;;
-c) rm $1;;
-*) echo "select from a,b,c";;
+esac
